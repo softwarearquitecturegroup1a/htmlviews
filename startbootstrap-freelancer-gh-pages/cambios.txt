@@ -1,0 +1,4 @@
+05/04/18
+
+Se crearon las paginas de Login y Home
+Sin embargo, deje un reserva.html donde aun se conserva la plantilla inicial en caso de necesitarse. 
