@@ -2,3 +2,6 @@
 
 Se crearon las paginas de Login y Home
 Sin embargo, deje un reserva.html donde aun se conserva la plantilla inicial en caso de necesitarse. 
+
+06/04/18
+se creo la vista request ( Solicitar ) y la vista deliver ( Entregar )

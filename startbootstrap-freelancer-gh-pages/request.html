@@ -36,14 +36,23 @@
           Menu
           <i class="fa fa-bars"></i>
         </button>
-        
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item mx-0 mx-lg-1">
+                <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#">Perfil</a>
+              </li>
+              <li class="nav-item mx-0 mx-lg-1">
+                <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.html">Logout</a>
+              </li>
+            </ul>
+        </div>
       </div>
     </nav>
     
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="request">
       <div class="container">
-        <h2 class="text-center text-uppercase text-secondary mb-0">Inicia sesion</h2>
+        <h2 class="text-center text-uppercase text-secondary mb-0">Inicia tu viaje</h2>
         <hr class="star-dark mb-5">
         <div class="row">
           <div class="col-lg-8 mx-auto">
@@ -52,22 +61,36 @@
             <form name="sentMessage" id="contactForm" novalidate="novalidate">
               <div class="control-group">
                 <div class="form-group floating-label-form-group controls mb-0 pb-2 text-center">
-                  <label>Usuario</label>
-                  <input class="form-control text-center" id="user" type="text" placeholder="Usuario" required="required" data-validation-required-message="Please enter your user.">
+                  <h5 class="text-center">Estacion de inicio</h5>
+                  <!-- <label for="start"> Estacion de inicio </label> -->
+                  <select class="form-control text-center" id="start" required="required">
+                    <option>Edificio CyT</option>
+                    <option>Entrada Calle 26</option>
+                    <option>Entrada Edificio Uriel Gutierrez</option>
+                    <option>Entrada Calle 53</option>
+                    <option>Entrada Calle 45</option>
+                  </select>
                   <p class="help-block text-danger"></p>
                 </div>
               </div>
               <div class="control-group">
                 <div class="form-group floating-label-form-group controls mb-0 pb-2 text-center">
-                  <label>Identificacion</label>
-                  <input class="form-control text-center" id="identification" type="number" placeholder="Identificacion" required="required" data-validation-required-message="Please enter your identification number.">
+                  <h5 class="text-center">Estacion de destino</h5>
+                  <!-- <label for="end"> Estacion de destino </label> -->
+                  <select class="form-control text-center" id="end" required="required">
+                    <option>Edificio CyT</option>
+                    <option>Entrada Calle 26</option>
+                    <option>Entrada Edificio Uriel Gutierrez</option>
+                    <option>Entrada Calle 53</option>
+                    <option>Entrada Calle 45</option>
+                  </select>
                   <p class="help-block text-danger"></p>
                 </div>
               </div>
               <br>
               <div id="success"></div>
               <div class="form-group text-center">
-                <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Login</button>
+                <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Solicitar</button>
               </div>
             </form>
           </div>
